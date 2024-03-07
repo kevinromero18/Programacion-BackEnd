@@ -7,9 +7,10 @@
 
 ## Documentation
 
-Presenta el Primer Desafio entregable del curso, el cual cuenta con conceptos vistos hasta el momento dentro de un archivo JS, tales como:
+Presenta el Primer Desafio y ademas el Segundo Desafio entregable del curso, el cual cuenta con conceptos vistos hasta el momento dentro de un archivo JS, tales como:
 
 - Clases.
 - Metodos de Arrays.
+- Manejo de Archivos mediante promesas.
 
-Y ademas un archivo HTML para mi propia evaluacion del codigo.
+
