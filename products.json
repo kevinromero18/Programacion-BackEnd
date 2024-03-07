@@ -1,0 +1,29 @@
+[
+  {
+    "id": 0,
+    "title": "NIKE",
+    "description": "ZAPATILLA NIKE",
+    "price": "$50,000",
+    "thumbnail": "https://i.pinimg.com/564x/c3/57/d5/c357d503882fab5507f0376a50fa0bd9.jpg",
+    "code": "001",
+    "stock": "30"
+  },
+  {
+    "id": 1,
+    "title": "ADIDAS",
+    "description": "ZAPATILLA ADIDAS",
+    "price": "$60,000",
+    "thumbnail": "https://i.pinimg.com/originals/78/63/46/7863460405ffc7fa6195601bad60a879.jpg",
+    "code": "002",
+    "stock": "10"
+  },
+  {
+    "id": 2,
+    "title": "PUMA",
+    "description": "ZAPATILLA PUMA",
+    "price": "$30,000",
+    "thumbnail": "https://i.pinimg.com/originals/76/f6/01/76f6018113595149412c61e5dd78ccf0.jpg",
+    "code": "003",
+    "stock": "50"
+  }
+]
