@@ -1,3 +1,4 @@
+const express = require('express');
 const fs = require('fs').promises;
 const rutaArchivo = './products.json';
 class Product {
@@ -99,3 +100,29 @@ if (getProductById) {
     console.log(getProductById);
 };
 
+const app = express();
+const PORT = 3000;
+
+app.get('/products', async (req, res) => {
+    const limit = req.query.limit ? parseInt(req.query.limit) : undefined;
+    const products = await prodMgr.getProducts();
+    if (limit !== undefined) {
+        res.json(products.slice(0, limit));
+    } else {
+        res.json(products);
+    }
+});
+
+app.get('/products/:pid', async (req, res) => {
+    const pid = parseInt(req.params.pid);
+    const product = await prodMgr.getProductById(pid);
+    if (product) {
+        res.json(product);
+    } else {
+        res.status(404).json({ error: 'Product not found' });
+    }
+});
+
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
